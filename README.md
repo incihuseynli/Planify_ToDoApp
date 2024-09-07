@@ -19,7 +19,7 @@ This is a todo app example created as Windows Form project with C# , ADO.NET and
 
 ### Installation
 
-##How to run this project in your own PC:
+###How to run this project in your own PC:
 1. Clone the repo:
 
 ```bash
