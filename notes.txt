@@ -1,0 +1,4 @@
+//btnChangeState.Click += (s, ev) => ChangeState(todo.Id, todo.isCompleted);
+//btnEdit.Click += (s, ev) => EditTodoDescription(todo.Id);
+
+//btnDelete.Click += (s, ev) => DeleteTodoItem(todo.Id);

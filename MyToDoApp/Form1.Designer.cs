@@ -44,17 +44,13 @@
             label8 = new Label();
             label5 = new Label();
             label4 = new Label();
-            panel6 = new Panel();
-            button7 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            label6 = new Label();
-            label7 = new Label();
             panel7 = new Panel();
+            panelTodos = new Panel();
+            label6 = new Label();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel5.SuspendLayout();
-            panel6.SuspendLayout();
+            panelTodos.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -114,6 +110,7 @@
             button3.ForeColor = Color.FromArgb(48, 208, 8);
             button3.Name = "button3";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -124,6 +121,7 @@
             button2.ForeColor = Color.FromArgb(208, 8, 8);
             button2.Name = "button2";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -165,56 +163,22 @@
             resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
             // 
-            // panel6
+            // panel7
             // 
-            resources.ApplyResources(panel6, "panel6");
-            panel6.Controls.Add(button7);
-            panel6.Controls.Add(button5);
-            panel6.Controls.Add(button6);
-            panel6.Controls.Add(label6);
-            panel6.Controls.Add(label7);
-            panel6.Name = "panel6";
-            panel6.Paint += panel6_Paint;
+            resources.ApplyResources(panel7, "panel7");
+            panel7.Name = "panel7";
             // 
-            // button7
+            // panelTodos
             // 
-            resources.ApplyResources(button7, "button7");
-            button7.Cursor = Cursors.Hand;
-            button7.ForeColor = Color.FromArgb(34, 34, 34);
-            button7.Name = "button7";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            resources.ApplyResources(button5, "button5");
-            button5.Cursor = Cursors.Hand;
-            button5.ForeColor = Color.FromArgb(34, 34, 34);
-            button5.Name = "button5";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
-            // button6
-            // 
-            resources.ApplyResources(button6, "button6");
-            button6.Cursor = Cursors.Hand;
-            button6.ForeColor = Color.FromArgb(34, 34, 34);
-            button6.Name = "button6";
-            button6.UseVisualStyleBackColor = true;
+            resources.ApplyResources(panelTodos, "panelTodos");
+            panelTodos.Controls.Add(label6);
+            panelTodos.Name = "panelTodos";
+            panelTodos.Paint += panel6_Paint;
             // 
             // label6
             // 
             resources.ApplyResources(label6, "label6");
             label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(label7, "label7");
-            label7.Name = "label7";
-            // 
-            // panel7
-            // 
-            resources.ApplyResources(panel7, "panel7");
-            panel7.Name = "panel7";
             // 
             // Form1
             // 
@@ -222,7 +186,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 34, 34);
             Controls.Add(panel7);
-            Controls.Add(panel6);
+            Controls.Add(panelTodos);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
@@ -236,8 +200,8 @@
             panel3.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
+            panelTodos.ResumeLayout(false);
+            panelTodos.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -258,13 +222,9 @@
         private Panel panel5;
         private Label label4;
         private Label label5;
-        private Panel panel6;
-        private Label label6;
-        private Label label7;
-        private Button button7;
-        private Button button5;
-        private Button button6;
         private Panel panel7;
         private Label label8;
+        private Panel panelTodos;
+        private Label label6;
     }
 }

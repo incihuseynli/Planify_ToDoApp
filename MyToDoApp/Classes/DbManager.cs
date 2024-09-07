@@ -27,8 +27,10 @@ namespace MyToDoApp.Classes
             // Open and close( in the last code line) connection first
             _conn.Open();
 
-            // Query command for what we eant from  db
-            var query = "Select * from todos";
+            // Query command for what we want from  db
+
+            //var query = "Select * from todos";  
+            var query = "Select TOP 6 * from todos\r\norder by CreatedDate desc";
 
             // To send query as command to db
             var cmd = new SqlCommand(query, _conn);
